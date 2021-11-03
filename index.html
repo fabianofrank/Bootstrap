@@ -14,11 +14,11 @@
     <header class="text-center">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse d-flex">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" ><a href="#works">Portfolio</a></li>
-            <li class="nav-item" ><a href="#about">About</a></li>
-            <li class="nav-item" ><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="nav-item" ><a href="#works">Portfolio</a></div>
+            <div class="nav-item" ><a href="#about">About</a></div>
+            <div class="nav-item" ><a href="#contact">Contact</a></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -29,28 +29,28 @@
         <h2>I'm a software developer</h2>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.</p>
-        <ul>
-          <li>
+        <div>
+          <div>
             <a href="#" class="github-icon"></a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#" class="linkedin-icon"></a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#" class="angelist-icon"></a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#" class="twitter-icon"></a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#" class="medium-icon"></a>
-          </li>
-        </ul>
+          </div>
+        </div>
         <button type="button" name="button">\/</button>
 
       </section>
 
-      <section class="works" id="works">
+      <section class="works text-center" id="works">
         <h2>My Recent Works</h2>
         <div>
           <div class="card" style="width: 18rem;">
@@ -92,114 +92,90 @@
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="about text-center" id="about">
         <h2>About me</h2>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
 don’t hestiate to contact me.</p>
         <button type="button" name="button">Get My Resume</button>
-        <div class="">
-          <div class="about-card">
-            <img src="" alt="">
-            <h3>Languages</h3>
-            <ul>
-              <li>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="" alt="">
+              <h3 class="card-title">Languages</h3>
+              <div>
                 <a href="#">JavaScript</a>
-              </li>
-              <li>
                 <a href="#">Ruby</a>
-              </li>
-              <li>
                 <a href="#">Html</a>
-              </li>
-              <li>
                 <a href="#">Css</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="about-card">
-            <img src="" alt="">
-            <h3>Frameworks</h3>
-            <ul>
-              <li>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="" alt="">
+              <h3 class="card-title">Frameworks</h3>
+              <div>
                 <a href="#">Bootstrap</a>
-              </li>
-              <li>
                 <a href="#">Ruby on rails</a>
-              </li>
-              <li>
                 <a href="#">RSpec</a>
-              </li>
-              <li>
                 <a href="#">Capybara</a>
-              </li>
-              <li>
                 <a href="#">Selenium</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="about-card">
-            <img src="" alt="">
-            <h3>Skills</h3>
-            <ul>
-              <li>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="" alt="">
+              <h3 class="card-title">Skills</h3>
+              <div>
                 <a href="#">Codekit</a>
-              </li>
-              <li>
                 <a href="#">GitHub</a>
-              </li>
-              <li>
                 <a href="#">Codepen</a>
-              </li>
-              <li>
                 <a href="#">Gitlab</a>
-              </li>
-              <li>
                 <a href="#">Terminal</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact text-center" id="contact">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        <form class="" action="index.html" method="post">
-          <div class="form-row">
-            <div class="form-group col-md-3">
-              <input class="form-control" type="name" placeholder="First Name" name="" value="">
-            </div>
-            <div class="form-group col-md-3">
-              <input class="form-control" type="name" placeholder="Last Name" name="" value="">
-            </div>
-            <div class="form-group col-md-3">
-              <input class="form-control" type="email" placeholder="Email address"name="" value="">
-            </div>
-            <div class="form-group col-md-3">
-              <input class="form-control" type="text" placeholder="Typing something" name="" value="">
-            </div>
+        <form class="row g-3" action="index.html" method="post">
+          <div class="form-group col-md-6">
+            <input class="form-control" type="name" placeholder="First Name" name="" value="">
+          </div>
+          <div class="form-group col-md-6">
+            <input class="form-control" type="name" placeholder="Last Name" name="" value="">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email address"name="" value="">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Typing something" name="" value="">
           </div>
           <button class="btn btn-primary" type="button" name="button">Get in touch</button>
         </form>
       </section>
     </main>
     <footer>
-      <ul>
-        <li>
+      <div>
+        <div>
           <a href="#" class="github-icon"></a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#" class="linkedin-icon"></a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#" class="angelist-icon"></a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#" class="twitter-icon"></a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#" class="medium-icon"></a>
-        </li>
-      </ul>
+        </div>
+      </div>
 
     </footer>
 
