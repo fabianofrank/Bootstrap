@@ -11,20 +11,20 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <header>
+    <header class="text-center">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse d-flex">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" ><a href="#">Portfolio</a></li>
-            <li class="nav-item" ><a href="#">About</a></li>
-            <li class="nav-item" ><a href="#">Contact</a></li>
+            <li class="nav-item" ><a href="#works">Portfolio</a></li>
+            <li class="nav-item" ><a href="#about">About</a></li>
+            <li class="nav-item" ><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="headline">
+      <section class="headline text-center">
         <h1>Hey there. I'm Alex.</h1>
         <h2>I'm a software developer</h2>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
@@ -46,125 +46,28 @@
             <a href="#" class="medium-icon"></a>
           </li>
         </ul>
-        <button type="button" name="button"></button>
+        <button type="button" name="button">\/</button>
 
       </section>
 
-      <section class="works">
+      <section class="works" id="works">
         <h2>My Recent Works</h2>
         <div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Multi-Posts Stories Gain+Glory</h3>
-            <ul>
-              <li>
-                <a href="#">Ruby on Rails</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <button>See Project</button>
-            </ul>
-          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+            <div class="card-body">
+              <a href="#" class="card-link">Ruby on Rails</a>
+              <a href="#" class="card-link">CSS</a>
+              <a href="#" class="card-link">JavaScript</a>
+              <a href="#" class="card-link">HTML</a>
+            </div>
+            <button class="btn btn-primary">See Project</button>
+          </div>          
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <h2>About me</h2>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
 don’t hestiate to contact me.</p>
@@ -233,7 +136,7 @@ don’t hestiate to contact me.</p>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         <form class="" action="index.html" method="post">
           <ul>
