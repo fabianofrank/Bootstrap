@@ -54,7 +54,7 @@
         <h2>My Recent Works</h2>
         <div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
             <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <a href="#" class="card-link">Ruby on Rails</a>
@@ -62,8 +62,33 @@
               <a href="#" class="card-link">JavaScript</a>
               <a href="#" class="card-link">HTML</a>
             </div>
-            <button class="btn btn-primary">See Project</button>
-          </div>          
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
+                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
+                  <button type="button" class="btn btn-primary">See Source</button>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Codekit</a>
+                    <a href="#" class="card-link">GitHub</a>
+                    <a href="#" class="card-link">JavaScript</a>
+                    <a href="#" class="card-link">Bootstrap</a>
+                    <a href="#" class="card-link">Terminal</a>
+                    <a href="#" class="card-link">Codepen</a>
+                  </div>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -139,25 +164,24 @@ don’t hestiate to contact me.</p>
       <section class="contact" id="contact">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         <form class="" action="index.html" method="post">
-          <ul>
-            <li>
-              <input type="name" placeholder="First Name" name="" value="">
-            </li>
-            <li>
-              <input type="name" placeholder="Last Name" name="" value="">
-            </li>
-            <li>
-              <input type="email" placeholder="Email address"name="" value="">
-            </li>
-            <li>
-              <input type="text" placeholder="Typing something" name="" value="">
-            </li>
-          </ul>
-          <button type="button" name="button">Get in touch</button>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <input class="form-control" type="name" placeholder="First Name" name="" value="">
+            </div>
+            <div class="form-group col-md-3">
+              <input class="form-control" type="name" placeholder="Last Name" name="" value="">
+            </div>
+            <div class="form-group col-md-3">
+              <input class="form-control" type="email" placeholder="Email address"name="" value="">
+            </div>
+            <div class="form-group col-md-3">
+              <input class="form-control" type="text" placeholder="Typing something" name="" value="">
+            </div>
+          </div>
+          <button class="btn btn-primary" type="button" name="button">Get in touch</button>
         </form>
       </section>
     </main>
-
     <footer>
       <ul>
         <li>
