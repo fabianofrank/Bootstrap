@@ -18,5 +18,8 @@
   "homepage": "https://github.com/fabianofrank/Bootstrap#readme",
   "devDependencies": {
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
