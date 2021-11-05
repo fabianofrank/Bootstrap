@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,13 +16,13 @@
     <title>Alex's Portfolio</title>
   </head>
   <body>
-    <header>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom bg-light py-5">
+    <header class="sticky-top">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom bg-light py-4 sticky-top">
       <div class="container-fluid justify-content-center">
         <ul class="nav navbar-nav d-flex flex-row">
-          <li class="nav-item mx-5"><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="nav-item mx-5"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item mx-5"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item mx-5"><a class="nav-link" href="#works">Portfolio</a></li>
+          <li class="nav-item mx-5"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item mx-5"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -53,10 +53,10 @@
             <a href="#" class="medium-icon"></a>
           </div>
         </div>
-        <button type="button" name="button" class="btn btn-primary my-5">\/</button>
+        <button type="button" name="button" class="btn btn-primary my-5" id="works">\/</button>
       </section>
 
-      <section class="works text-center m-5" id="works">
+      <section class="works text-center m-5">
         <h2>My Recent Works</h2>
         <div class="row justify-content-center">
           <div class="card-body col-lg-4" style="width: 18rem">
@@ -495,6 +495,7 @@
               </div>
               <button
                 type="button"
+                id="about"
                 class="btn btn-primary mt-3 mb-0"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -566,7 +567,7 @@
         </div>
       </section>
 
-      <section class="about text-center mt-5" id="about">
+      <section class="about text-center mt-5">
         <h2>About me</h2>
         <p class="mx-auto w-75 text-center my-5 lead" >
           I can help you build a product, feature, or website. Look through some
