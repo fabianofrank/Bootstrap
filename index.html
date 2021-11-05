@@ -1,34 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <title>Hello, world!</title>
+    <title>Alex's Portfolio</title>
   </head>
   <body>
-    <header class="justify-content-center d-flex">
-      <nav class="navbar navbar-light">
-        <div class="">
-          <div class="d-flex">
-            <div class="nav-item p-2" ><a href="#works">Portfolio</a></div>
-            <div class="nav-item p-2" ><a href="#about">About</a></div>
-            <div class="nav-item p-2" ><a href="#contact">Contact</a></div>
-          </div>
-        </div>
-      </nav>
+    <header>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom bg-light py-5">
+      <div class="container-fluid justify-content-center">
+        <ul class="nav navbar-nav d-flex flex-row">
+          <li class="nav-item mx-5"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item mx-5"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item mx-5"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     </header>
-
     <main>
-      <section class="headline text-center">
+      <section class="headline text-center m-5">
         <h1>Hey there. I'm Alex.</h1>
         <h2>I'm a software developer</h2>
-        <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
-          don’t hestiate to contact me.</p>
+        <p class="mx-auto w-75 text-center my-5 lead">
+          I can help you build a product, feature, or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
         <div>
           <div>
             <a href="#" class="github-icon"></a>
@@ -46,237 +53,512 @@
             <a href="#" class="medium-icon"></a>
           </div>
         </div>
-        <button type="button" name="button">\/</button>
-
+        <button type="button" name="button" class="btn btn-primary my-5">\/</button>
       </section>
 
-      <section class="works text-center" id="works">
+      <section class="works text-center m-5" id="works">
         <h2>My Recent Works</h2>
         <div class="row justify-content-center">
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-body col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-            <h3 class="card-title">Multi-Posts Stories Gain+Glory</h3>
+          <div class="card-body col-lg-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="ressources/Work-2.png"
+              alt="Card image cap"
+            />
+            <h3 class="card-title mt-4">Multi-Posts Stories Gain+Glory</h3>
             <div class="card-body">
               <div class="">
-                <a href="#" class="card-link">Ruby on Rails</a>
-                <a href="#" class="card-link">CSS</a>
-                <a href="#" class="card-link">JavaScript</a>
-                <a href="#" class="card-link">HTML</a>
+                <span class="badge bg-secondary">Ruby on Rails</span>
+                <span class="badge bg-warning">CSS</span>
+                <span class="badge bg-success">JavaScript</span>
+                <span class="badge bg-info">HTML</span>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                See Project
+              </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
-                  <img class="card-img-top" src="ressources/Work-2.png" alt="Card image cap">
-                  <h5 class="modal-title" id="exampleModalLabel">Keeping track of hundreds of components</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">See live</button>
-                  <button type="button" class="btn btn-primary">See Source</button>
+                  <img
+                    class="card-img-top"
+                    src="ressources/Work-2.png"
+                    alt="Card image cap"
+                  />
+                  <h5 class="modal-title my-3" id="exampleModalLabel">
+                    Keeping track of hundreds of components
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-4"
+                    data-bs-dismiss="modal"
+                  >
+                    See live
+                  </button>
+                  <button type="button" class="btn btn-primary mt-4">
+                    See Source
+                  </button>
                   <div class="card-body">
-                    <a href="#" class="card-link">Codekit</a>
-                    <a href="#" class="card-link">GitHub</a>
-                    <a href="#" class="card-link">JavaScript</a>
-                    <a href="#" class="card-link">Bootstrap</a>
-                    <a href="#" class="card-link">Terminal</a>
-                    <a href="#" class="card-link">Codepen</a>
+                    <span class="badge bg-secondary">Codekit</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">Terminal</span>
+                    <span class="badge bg-secondary">Codepen</span>
                   </div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
                 </div>
               </div>
             </div>
@@ -284,69 +566,108 @@
         </div>
       </section>
 
-      <section class="about text-center" id="about">
+      <section class="about text-center mt-5" id="about">
         <h2>About me</h2>
-        <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
-don’t hestiate to contact me.</p>
-        <button type="button" name="button">Get My Resume</button>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 18rem;">
-              <img src="" alt="">
-              <h3 class="card-title">Languages</h3>
+        <p class="mx-auto w-75 text-center my-5 lead" >
+          I can help you build a product, feature, or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <button type="button" name="button" class="btn btn-primary mb-5">
+          Get My Resume
+        </button>
+        <div class="row m-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+            <div class="card bg-info p-5 pt-4" style="width: 18rem">
+              <img src="" alt="" />
+              <h3 class="card-title mb-4 text-white">Languages</h3>
               <div>
-                <a href="#">JavaScript</a>
-                <a href="#">Ruby</a>
-                <a href="#">Html</a>
-                <a href="#">Css</a>
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">Ruby</span>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 18rem;">
-              <img src="" alt="">
-              <h3 class="card-title">Frameworks</h3>
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+            <div class="card bg-warning px-5 pt-4 pb-4" style="width: 18rem">
+              <img src="" alt="" />
+              <h3 class="card-title mb-4 text-white">Frameworks</h3>
               <div>
-                <a href="#">Bootstrap</a>
-                <a href="#">Ruby on rails</a>
-                <a href="#">RSpec</a>
-                <a href="#">Capybara</a>
-                <a href="#">Selenium</a>
+                <span class="badge bg-secondary">Bootstrap</span>
+                <span class="badge bg-secondary">Ruby on rails</span>
+                <span class="badge bg-secondary">RSpec</span>
+                <span class="badge bg-secondary">Capybara</span>
+                <span class="badge bg-secondary">Selenium</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 18rem;">
-              <img src="" alt="">
-              <h3 class="card-title">Skills</h3>
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+            <div class="card bg-success px-5 pt-4 pb-4" style="width: 18rem">
+              <img src="" alt="" />
+              <h3 class="card-title mb-4 text-white">Skills</h3>
               <div>
-                <a href="#">Codekit</a>
-                <a href="#">GitHub</a>
-                <a href="#">Codepen</a>
-                <a href="#">Gitlab</a>
-                <a href="#">Terminal</a>
+                <span class="badge bg-secondary">Codekit</span>
+                <span class="badge bg-secondary">GitHub</span>
+                <span class="badge bg-secondary">Codepen</span>
+                <span class="badge bg-secondary">Gitlab</span>
+                <span class="badge bg-secondary">Terminal</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact text-center" id="contact">
-        <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        <form class="row g-3" action="index.html" method="post">
+      <section class="contact text-center mt-5" id="contact">
+        <p class="my-5 mx-4 lead">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+        <form class="row g-3 mx-auto w-50" action="index.html" method="post">
           <div class="form-group col-md-6">
-            <input class="form-control" type="name" placeholder="First Name" name="" value="">
+            <input
+              class="form-control"
+              type="name"
+              placeholder="First Name"
+              name=""
+              value=""
+            />
           </div>
           <div class="form-group col-md-6">
-            <input class="form-control" type="name" placeholder="Last Name" name="" value="">
+            <input
+              class="form-control"
+              type="name"
+              placeholder="Last Name"
+              name=""
+              value=""
+            />
           </div>
           <div class="form-group">
-            <input class="form-control" type="email" placeholder="Email address"name="" value="">
+            <input
+              class="form-control"
+              type="email"
+              placeholder="Email address"
+              name=""
+              value=""
+            />
           </div>
           <div class="form-group">
-            <input class="form-control" type="text" placeholder="Typing something" name="" value="">
+            <textarea
+              name=""
+              value=""
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
           </div>
-          <button class="btn btn-primary" type="button" name="button">Get in touch</button>
+          <button
+            class="btn btn-primary mx-auto w-50 mb-5 mt-4"
+            type="button"
+            name="button"
+          >
+            Get in touch
+          </button>
         </form>
       </section>
     </main>
@@ -368,14 +689,16 @@ don’t hestiate to contact me.</p>
           <a href="#" class="medium-icon"></a>
         </div>
       </div>
-<!-- This is a test comment! -->
     </footer>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
